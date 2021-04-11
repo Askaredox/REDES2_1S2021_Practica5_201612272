@@ -59,7 +59,7 @@ class App extends React.Component{
 
   getData=async()=>{
     try{
-      const res = await fetch('http://localhost:5000/');
+      const res = await fetch('http://192.168.1.46:5000/');
       const data = await res.json();
       this.setState({
         data:{
