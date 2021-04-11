@@ -59,7 +59,7 @@ class App extends React.Component{
 
   getData=async()=>{
     try{
-      const res = await fetch('http://LB-Redes2-201612272-94e44adad398b24d.elb.us-east-2.amazonaws.com:5000/');
+      const res = await fetch('http://LB-backend-Redes2-1b6a3816e4a86d97.elb.us-east-2.amazonaws.com:5000');
       const data = await res.json();
       this.setState({
         data:{
