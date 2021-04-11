@@ -2,16 +2,20 @@ from flask import Flask
 from flask_cors import CORS
 import simplejson as json
 from datetime import datetime
-import requests
 
 app = Flask(__name__)
 cors = CORS(app, resources={r"/*": {"origin": "*"}})
 
 @app.route('/', methods=['GET'])
 def check():
-    r=requests.get('http://192.168.1.46:5000/')
-
-    return json.dumps(r.json())
+    ret = {
+        'curso':'Redes de Computadoras 2',
+        'nombre':'Andrés Esteban Carvajal Morales',
+        'carnet':'201612272',
+        'fecha': str(datetime.now())
+    }
+    
+    return json.dumps(ret)
 
 
 if __name__ == '__main__':
