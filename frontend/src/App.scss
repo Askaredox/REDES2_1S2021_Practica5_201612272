@@ -1,0 +1,28 @@
+.menu{
+  background-color: sienna;
+  text-align: center;
+  *{
+    color: white !important;
+    margin: 0 10px;
+  }
+}
+
+.content{
+  margin: 20px 0 0 0;
+  align-items: center;
+
+  *{
+    margin-top: 10px;
+  }
+
+  .image{
+    text-align: center;
+  }
+
+  .text{
+    padding: 0 50px;
+  }
+}
+
+
+
